@@ -10,6 +10,7 @@
             <div class="d-flex align-items-center">
                 <div class="pr-3">
                     <img src="{{ $post->user->profile->profileImage()}}" class="rounded-circle w-100" style="max-width:40px;">
+
                 </div>
 
                 <div>
@@ -18,6 +19,7 @@
                             <span class="text-dark">{{ $post->user->username}}</span>
                         </a>
                         <a href="#" class="pl-3">FOLLOW ME</a>
+
                     </div>
                 </div>
 
@@ -34,4 +36,7 @@
     </div>
 
 </div>
+
+
 @endsection
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e9c1c06a2119d14"></script>
