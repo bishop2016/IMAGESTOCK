@@ -6,12 +6,13 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Mail;
+use Laravelista\Comments\Commenter;
 use App\Mail\NewUserWelcomeMail;
 
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, Commenter;
 
     /**
      * The attributes that are mass assignable.
@@ -66,4 +67,7 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profile::class);
     }
+
+
+
 }
